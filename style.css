@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.box{
+
+width:200px;
+ height: 300px;
+
+margin: 5em;  /*位置*/
+
+border: solid 3px #000000;
+
+background-color: 白;
+text-decoration: none;
+}
+
+.checkbox{
+	border-bottom: 1px solid #333;
+    padding: 1px;
+}
+
+.checkbox input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+}
