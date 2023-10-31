@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-
 #F{
-    display: none;
+  display: none;
 }
 
 .F{
@@ -63,9 +62,6 @@
 #F2{
     display: none;
 }
-
-
-
 .F2{
     display: inline-block;
     background: #b6beff;
@@ -81,9 +77,9 @@
 }
 
 
-table{
-margin:auto;
-}
+
+
+
 
 
 
