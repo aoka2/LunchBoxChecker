@@ -16,7 +16,7 @@ body{
     cursor: pointer;
 }
 
-button{
+.option{
     width: 300px;
     padding: 10px;
     margin: 10px;
