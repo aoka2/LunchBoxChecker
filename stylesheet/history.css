@@ -1,22 +1,5 @@
 @charset "UTF-8";
 
-#F{
-  display: none;
-}
-
-.F{
-    display: inline-block;
-    background: #b6beff;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-.G{
-    background: #ffaf74;
-    height: 100px;
-}
-#F:checked+label+.G{
-    display: none;
-}
 
 
 .popup {
@@ -57,6 +40,24 @@
   line-height: 1rem;
 }
 
+
+#F{
+  display: none;
+}
+
+.F{
+    display: inline-block;
+    background: #b6beff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.G{
+    background: #ffaf74;
+    height: 100px;
+}
+#F:checked+label+.G{
+    display: none;
+}
 
 
 #F2{
