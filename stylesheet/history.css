@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-
+/*ポップアップ*/
 .popup {
   width: 100vw;
   height: 100vh;
@@ -41,44 +41,7 @@
 }
 
 
-#F{
-  display: none;
-}
-
-.F{
-    display: inline-block;
-    background: #b6beff;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-.G{
-    background: #ffaf74;
-    height: 100px;
-}
-#F:checked+label+.G{
-    display: none;
-}
-
-
-#F2{
-    display: none;
-}
-.F2{
-    display: inline-block;
-    background: #b6beff;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-.G2{
-    background: #ffaf74;
-    height: 100px;
-}
-#F2:checked+label+.G2{
-    display: none;
-}
-
-
-
+/*タブメニュー*/
 .tab_container {
   padding-bottom: 1em;
   background-color: #fff;
