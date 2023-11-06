@@ -9,36 +9,45 @@
 	<h1><a href="home.html">LunchBoxChecker</a></h1>
 	<button onclick="location.href='home.html'">ホームへ</button>
 
-	
-	<input type="checkbox" id="F">
-	<label class="F" for="F">ボタン</label>
-	<input type="checkbox" id="F2">
-	
-	
-		<div class="G">
-		 <section class="tours">
-	    <!-- ボタン -->
-	    <a href="#popup" class="btn-green">日付</a>
-	  </section>
-	  <!-- ポップアップ -->
-	  <section class="popup" id="popup">
-	    <div class="popup__container">
-	      <h2>レシピ</h2>
-	      <p class="popup__text">レシピ詳細</p>
-	      <!-- 閉じるボタン -->
-	      <a href="#tours" class="popup__close">&times;</a>
-	    </div>
-    
-  </section>
-	</div>
 
+	<div class="tab_container">
+		<input id="tab1" type="radio" name="tab_item" checked>
+		<label class="tab_item" for="tab1">タブ1</label>
+		<input id="tab2" type="radio" name="tab_item">
+		<label class="tab_item" for="tab2">タブ2</label>
+		<div class="tab_content" id="tab1_content">
+		  <div class="tab_content_description">
+			<p class="c-txtsp">タブ1の内容</p>
 
-	<input type="checkbox" id="F2">
-	<label class="F2" for="F2">ボタン</label>
-	
-	<div class="G2">
-		これが表示/非表示
-	</div>
+			<a href="#popup1" class="btn-green">履歴</a>
+			<section class="popup" id="popup1">
+				<div class="popup__container">
+				  <h2>詳細</h2>
+				  <p class="popup__text">詳細</p>
+				  <!-- 閉じるボタン -->
+				  <a href="#tours" class="popup__close">&times;</a>
+				</div>
+		 	</section>
+
+		  </div>
+		</div>
+		<div class="tab_content" id="tab2_content">
+		  <div class="tab_content_description">
+			<p class="c-txtsp">タブ2の内容</p>
+
+			<a href="#popup2" class="btn-green">レシピ</a>
+			<section class="popup" id="popup2">
+				<div class="popup__container">
+				  <h2>レシピ</h2>
+				  <p class="popup__text">レシピ詳細</p>
+				  <!-- 閉じるボタン -->
+				  <a href="#tours" class="popup__close">&times;</a>
+				</div>
+		 	</section>
+
+		  </div>
+		</div>
+	  </div>
 	
 		
 
