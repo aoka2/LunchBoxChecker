@@ -9,34 +9,44 @@
 	<h1><a href="home.html">LunchBoxChecker</a></h1>
 	<button onclick="location.href='home.html'">ホーム</button>
 	
-	<button id="F" onclick="history()"></button>
-	<button id="F2" onclick="favorite()"></button>	
-		<label class="F"for="F">ボタン</label>
-		<label class="F2"for="F2">ボタン</label>
 
-		<div class="G">
-			<p>これが表示/非表示</p>
-		 <!-- <section class="tours">
-			
-			<a href="#popup" class="btn-green">日付</a>
-		</section>
-		 <section class="popup" id="popup">
-			<div class="popup__container">
-				<h2>レシピ</h2>
-				<p class="popup__text">レシピ詳細</p>
-			
-				<a href="#tours" class="popup__close">&times;</a>
+		<div class="tab_container">
+			<input id="tab1" type="radio" name="tab_item" checked>
+			<label class="tab_item" for="tab1">履歴</label>
+			<input id="tab2" type="radio" name="tab_item">
+			<label class="tab_item" for="tab2">お気に入り</label>
+			<div class="tab_content" id="tab1_content">
+			  <div class="tab_content_description">
+				<p class="c-txtsp">タブ1の内容</p>
+
+				<a href="#popup1" class="btn-green">詳細</a> <!--a href (id)-->
+				<section class="popup" id="popup1">
+					<div class="popup__container">
+						<h2>詳細</h2>
+						<p class="popup__text">詳細</p>
+					
+						<a href="#tours" class="popup__close">&times;</a>
+					</div>
+				 </section> 
+			  </div>
 			</div>
-		
-		 </section> -->
-		</div>
+			<div class="tab_content" id="tab2_content">
+			  <div class="tab_content_description">
+				<p class="c-txtsp">タブ2の内容</p>
 
-	
-		
-		<div class="G2">
-			これが表示/非表示
-		</div>
-	
+				<a href="#popup2" class="btn-green">レシピ</a>
+				<section class="popup" id="popup2">
+					<div class="popup__container">
+						<h2>レシピ</h2>
+						<p class="popup__text">レシピ詳細</p>
+					
+						<a href="#tours" class="popup__close">&times;</a>
+					</div>
+				 </section> 
+			  </div>
+			</div>
+		  </div>
+
 </body>
 </html>
 
