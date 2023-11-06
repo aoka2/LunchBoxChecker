@@ -17,3 +17,18 @@ function pulldownOpen(){
 function pulldownClose(){
     
 }
+
+function filterHyde(){
+    $('.final-check').css('display','block');
+    $('#filter').css('display','none');
+}
+
+function lunchMake(){
+    $('.final-check').css('display','none');
+    $('#lunch-make').css('display','block');
+}
+
+function filterToBack(){
+    $('.final-check').css('display','none');
+    $('#filter').css('display','block');
+}
