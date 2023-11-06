@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>LunchBox</title>
+	<meta charset="UTF-8">
+	<link href="stylesheet/lunchBox.css" rel="stylesheet" type="text/css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.0.min.js"></script>
+
+	<title>LunchBox</title>
 </head>
 <body>
 	<button onclick="location.href='home.html'">戻る</button>
-	<div class="filter-tab">
-		<p>フィルター</p>
-		<input type="checkbox">卵
-		<input type="checkbox">牛乳
-		<input type="checkbox">小麦
-		<input type="checkbox">そば粉
-		<input type="checkbox">しいたけ
-		<br>
-		<input type="button" value="確認" onclick="filterHyde()">
+	<div id="filter">
+
+	<p>フィルター</p>
+	<div class="allergy-filter">
+		<button onclick="pulldownOpen()" id="filter-button">アレルギー🔽</button>
+		<div id="filter-content" class="filter-content-style">
+		</div>
+	</div>
+
+	<div class="favorite-filter">
+	</div>
+	<div class="dislike-filter">
+	</div>
+
+	<br>
+
+	<input type="button" value="確認" onclick="filterHyde()">
 	</div>
 	<div class="final-check">
 		<p>Are you shure??</p>
-		<input type="button" value="はい">
-		<input type="button" value="いいえ">
+		<input type="button" value="はい" onclick="lunchMake()">
+		<input type="button" value="いいえ" onclick="filterToBack()">
 	</div>
-	<div class="lunch-make">
+
+	<div id="lunch-make">
 		<img src="images/bento1.png" style="max-width : 20%">
-		
+
 		<input type="button" value="確定">
 	</div>
+	<script src="js/lunchBox.js"></script>
 </body>
+
 </html>

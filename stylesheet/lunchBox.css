@@ -1,0 +1,32 @@
+@charset "UTF-8";
+#filter-button{
+    display: flex;
+}
+
+.filter-content-style{
+    display : none;
+}
+
+.filter-content-button{
+    flex: auto;
+}
+
+.favorite-filter{
+    display : none;
+}
+
+.dislike-filter{
+    display : none;
+}
+
+.final-check{
+    display : none;
+}
+
+#lunch-make{
+    display: none;
+}
+.show{
+    display : block;
+}
+
