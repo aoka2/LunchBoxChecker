@@ -10,9 +10,10 @@
 
 	<title>LunchBox</title>
 </head>
-
 <body>
 	<button onclick="location.href='home.html'">戻る</button>
+	<div id="filter">
+
 	<p>フィルター</p>
 	<div class="allergy-filter">
 		<button onclick="pulldownOpen()" id="filter-button">アレルギー🔽</button>
@@ -21,16 +22,9 @@
 	</div>
 
 	<div class="favorite-filter">
-
 	</div>
-
 	<div class="dislike-filter">
-
 	</div>
-
-
-
-
 
 	<br>
 
@@ -38,10 +32,11 @@
 	</div>
 	<div class="final-check">
 		<p>Are you shure??</p>
-		<input type="button" value="はい">
-		<input type="button" value="いいえ">
+		<input type="button" value="はい" onclick="lunchMake()">
+		<input type="button" value="いいえ" onclick="filterToBack()">
 	</div>
-	<div class="lunch-make">
+
+	<div id="lunch-make">
 		<img src="images/bento1.png" style="max-width : 20%">
 
 		<input type="button" value="確定">

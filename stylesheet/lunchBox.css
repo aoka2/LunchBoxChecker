@@ -11,5 +11,22 @@
     flex: auto;
 }
 
-.show{display : block;}
+.favorite-filter{
+    display : none;
+}
+
+.dislike-filter{
+    display : none;
+}
+
+.final-check{
+    display : none;
+}
+
+#lunch-make{
+    display: none;
+}
+.show{
+    display : block;
+}
 
