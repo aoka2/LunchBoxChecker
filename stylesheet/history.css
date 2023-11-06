@@ -42,28 +42,6 @@
 }
 
 
-<<<<<<< HEAD:history.css
-=======
-#F{
-  display: none;
-}
-
-.F{
-    display: inline-block;
-    background: #b6beff;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-.G{
-    background: #ffaf74;
-    height: 100px;
-}
-#F:checked+label+.G{
-    display: none;
-}
-
-
->>>>>>> 3d3ca2644f6889f2bd1d3c16e965f69e72b23204:stylesheet/history.css
 #F2{
   display: none;
 }
