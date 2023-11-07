@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="stylesheet/history.css" />
+<link rel="stylesheet" href="css/history.css" />
 <title>LunchBoxChecker</title>
 </head>
 <body>
@@ -34,8 +34,12 @@
 		<div class="tab_content" id="tab2_content">
 		  <div class="tab_content_description">
 			
-
-			<a href="#popup2" class="btn-green">唐揚げ</a>
+			<div class="items">
+					<div class="item">
+						<input type="checkbox" class="checkbox" onchange="toggleDeleteButton()" /><a href="#popup2" class="btn-green">唐揚げ</a>
+					</div>
+					<button id="deleteButton" onclick="deleteCheckedItems()" disabled>選択した項目を削除</button>
+			</div>
 			<section class="popup" id="popup2">
 				<div class="popup__container">
 						<h2>唐揚げ</h2>
@@ -57,10 +61,37 @@
 		  </div>
 		</div>
 	  </div>
-	
-		
-
-	
 </body>
 </html>
+
+<script>		
+        // チェックボタンが変更されたときに削除ボタンを有効化/無効化する関数
+        function toggleDeleteButton() {
+            const checkboxes = document.querySelectorAll('.checkbox');
+            const deleteButton = document.getElementById('deleteButton');
+            let anyChecked = false;
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    anyChecked = true;
+                }
+            });
+
+            deleteButton.disabled = !anyChecked;
+        }
+
+        // チェックされた項目を削除する関数
+		function deleteCheckedItems() {
+			if (window.confirm('本当に削除しますか？')) {
+            const items = document.querySelectorAll('.item');
+
+            items.forEach(item => {
+                const checkbox = item.querySelector('.checkbox');
+                if (checkbox.checked) {
+                    item.remove();
+                }
+            });
+		}
+        }
+</script>
 
