@@ -30,3 +30,22 @@
     display : block;
 }
 
+.farstCooking{
+    position: relative;
+}
+
+.secondCooking{
+    position: absolute;
+    left: 40px;
+}
+.thaadCooking{
+    position:absolute;
+    left:70px;
+}
+
+.cooking-detail{
+    display: none;
+    position:absolute;
+    text-align: center;
+}
+

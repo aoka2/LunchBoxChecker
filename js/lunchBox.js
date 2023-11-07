@@ -32,3 +32,14 @@ function filterToBack(){
     $('.final-check').css('display','none');
     $('#filter').css('display','block');
 }
+
+function cookingResip(){
+    $('.cooking-detail').css('display','block');
+    let detailText = $(".cooking-detail");
+    detailText.append("<p>あいうえお！</p>");
+
+}
+
+function checkLunch(){
+    alert("かくてい！");
+}
