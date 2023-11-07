@@ -37,9 +37,15 @@
 	</div>
 
 	<div id="lunch-make">
-		<img src="images/bento1.png" style="max-width : 20%">
+		<img src="images/bento1.png" class="farstCooking" style="max-width : 50%" onclick="cookingResip()">
+		<img src="images/bento1.png" class="secondCooking" style="max-width : 50%" onclick="cookingResip()">
+		<img src="images/bento1.png" class="thaadCooking" style="max-width : 50%" onclick="cookingResip()">
+		<br>
+		<input type="button" value="確定" onclick="checkLunch()">
 
-		<input type="button" value="確定">
+		<div class="cooking-detail">
+			
+		</div>
 	</div>
 	<script src="js/lunchBox.js"></script>
 </body>
